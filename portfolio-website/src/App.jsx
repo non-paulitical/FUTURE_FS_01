@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Container } from '@radix-ui/themes';
-import { DesktopNavBar, MobileNavBar, About, Projects, Skills, Contact } from './components';
+import { NavBar, About, Projects, Skills, Contact } from './components';
 import './App.css'
 
 function App() {
@@ -9,8 +9,7 @@ function App() {
     <Router>
       <Container className="h-full bg-background text-base-text">
         <header className="sticky top-0">
-          <DesktopNavBar />
-          <MobileNavBar />
+          <NavBar />
         </header>
         <div className="wrapper w-3/5 mx-auto">
           <main>

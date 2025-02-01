@@ -1,12 +1,12 @@
 import React from 'react'
 import { Section } from '@radix-ui/themes';
-import displayPicture from '../assets/images/display_picture.png'
+import displayPicture from '../assets/images/display_picture_cropped.png'
 
 const About = () => {
   return (
     <Section>
-      <Section className='flex'>
-        <div>
+      <Section className='flex-wrap justify-center'>
+        <div className='m-4 bg-[url('>
           <img className='' src={displayPicture} alt="Display Picture of Abhijit Paul." />
         </div>
         <div>
