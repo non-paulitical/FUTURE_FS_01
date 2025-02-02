@@ -11,13 +11,13 @@ function App() {
         <header className="sticky top-0">
           <NavBar />
         </header>
-        <div className="wrapper w-3/5 mx-auto">
-          <main>
+        <div className="wrapper m-5 w-4/5 lg:w-3/5 mx-auto">
+          <main className=''>
             <About />
             <Projects />
             <Skills />
           </main>
-          <footer>
+          <footer className=''>
             <Contact />
           </footer>
         </div>

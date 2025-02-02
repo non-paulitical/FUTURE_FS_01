@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
 
 @theme {
     --color-background: #11071F;
@@ -6,4 +7,10 @@
     --color-base-text: #ffffff;
     --color-themed-text: #7127BA;
     --color-nav-button: #2b134c;
+}
+
+@layer base {
+    body {
+        font-family: "Preahvihear", serif;
+    }
 }
