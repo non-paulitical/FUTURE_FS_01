@@ -11,7 +11,7 @@ const About = () => {
           <img className='lg:h-70 h-25 bg-[url("/assets/gradient/gradient.svg")] bg-no-repeat bg-cover border-1 border-[#80808036] rounded-2xl' src={displayPicture} alt="Display Picture of Abhijit Paul." />
           <div className="flex">
             <img className='h-15' src="/assets/Arrow.svg" alt="Arrow Icon" />
-            <span className='whitespace-nowrap'>Hello! I Am <span className='text-themed-text'>Abhijit paul</span></span>
+            <span className='lg:whitespace-nowrap'>Hello! I Am <span className='text-themed-text'>Abhijit paul</span></span>
           </div>
         </div>
         <div className="w-2/3 mx-auto mt-4 text-xs lg:text-sm">
