@@ -26,7 +26,7 @@ const NavBar = () => {
   return (
     <nav className='sticky bg-navbar'>
       {/* Mobile Controls */}
-      <div className='lg:hidden'>
+      <div className='md:hidden'>
         <Section className='h-15 p-5 flex justify-between items-center'>
           <NavLogo />
           <Button 
@@ -47,9 +47,9 @@ const NavBar = () => {
       </div>
 
       {/* Desktop Navigation */}
-      <div className='hidden lg:block'>
+      <div className='hidden md:block'>
         <div className='flex justify-around items-center'>
-          <Section className='h-15 p-5'>
+          <Section className='h-15'>
             <NavLogo />
           </Section>
           <Section>
