@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "description": "A personal portfolio built with React and Tailwind CSS.",
+    "techStack": [
+      "React",
+      "Tailwind"
+    ],
+    "image": "../assets/images/project_screenshot.png",
+    "link": "https://abhijit2607.github.io/Advanced-React-To-do-App/#/signin"
+  },
+  {
+    "id": 2,
+    "title": "AI Chatbot",
+    "description": "An AI chatbot powered by OpenAI API.",
+    "techStack": [
+      "React",
+      "Node.js",
+      "OpenAI API"
+    ],
+    "image": "../assets/images/project_screenshot.png",
+    "link": "https://abhijit2607.github.io/Advanced-React-To-do-App/#/signin"
+  }
+]

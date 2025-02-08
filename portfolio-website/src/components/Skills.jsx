@@ -8,10 +8,10 @@ const Skills = () => {
         <h1 className='section-heading'>Skills</h1>
       </Section>
       <Section className='cards flex-1 grid grid-cols-1 gap-5 md:grid-cols-2 md:content-center'>
-        <div className="card md:grid-cols-1">
-          <div className="card-background"></div>
-          <div className="card-content">
-            <h3 class='card-heading'>LANGUAGES</h3>
+        <div className='card md:grid-cols-1'>
+          <div className='card-background'></div>
+          <div className='card-content'>
+            <h3 className='card-heading'>LANGUAGES</h3>
             <ul className='card-list'>
               <li>C Language</li>
               <li>C++</li>
@@ -21,10 +21,10 @@ const Skills = () => {
             </ul>
           </div>
         </div>
-        <div className="card md:grid-cols-2">
-          <div className="card-background"></div>
-          <div className="card-content">
-            <h3 class='card-heading'>LIBRARIES/FRAMEWORK</h3>
+        <div className='card md:grid-cols-2'>
+          <div className='card-background'></div>
+          <div className='card-content'>
+            <h3 className='card-heading'>LIBRARIES/FRAMEWORK</h3>
             <ul className='card-list'>
               <li>Django</li>
               <li>ReactJS</li>
@@ -34,10 +34,10 @@ const Skills = () => {
             </ul>
           </div>
         </div>
-        <div className="card md:grid-cols-1 md:col-start-1 md:col-span-2 md:row-start-2 md:justify-self-center md:w-1/2">
-          <div className="card-background"></div>
-          <div className="card-content">
-            <h3 class='card-heading'>TOOLS</h3>
+        <div className='card md:grid-cols-1 md:col-start-1 md:col-span-2 md:row-start-2 md:justify-self-center md:w-1/2'>
+          <div className='card-background'></div>
+          <div className='card-content'>
+            <h3 className='card-heading'>TOOLS</h3>
             <ul className='card-list'>
               <li>Version Controlling - Git</li>
               <li>Figma</li>
