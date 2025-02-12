@@ -1,6 +1,5 @@
 import React from 'react'
 import { Section } from '@radix-ui/themes';
-import displayPicture from '../assets/images/display_picture_cropped.png'
 import future_interns from '../assets/icons/future_interns_logo.jpg';
 
 const About = () => {
@@ -8,9 +7,9 @@ const About = () => {
     <Section id='about' className='space-y-15 text-sm'>
       <Section className='md:flex md:items-center md:justify-start'>
         <div className='flex'>
-          <img className='md:h-70 h-25 bg-[url("/assets/gradient/gradient.svg")] bg-no-repeat bg-cover border-1 border-[#80808036] rounded-2xl' src={displayPicture} alt='Display Picture of Abhijit Paul.' />
+          <img className='md:h-70 h-25 bg-[url("/assets/gradient/gradient.svg")] bg-no-repeat bg-cover border-1 border-[#80808036] rounded-2xl' src='/assets/images/display_picture.png' alt='Display Picture of Abhijit Paul.' />
           <div className='flex'>
-            <img className='h-15' src='/assets/Arrow.svg' alt='Arrow Icon' />
+            <img className='h-15' src='/assets/svg/Arrow.svg' alt='Arrow Icon' />
             <span className='md:whitespace-nowrap'>Hello! I Am <span className='text-themed-text'>Abhijit paul</span></span>
           </div>
         </div>
