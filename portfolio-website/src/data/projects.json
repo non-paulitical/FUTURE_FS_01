@@ -2,24 +2,47 @@
   {
     "id": 1,
     "title": "Portfolio Website",
-    "description": "A personal portfolio built with React and Tailwind CSS.",
+    "description": "A personal portfolio website showcasing the bio-date, engaged projects, skills acquired, and contact details.",
+    "category": "React",
     "techStack": [
-      "React",
-      "Tailwind"
+      "Vite + React",
+      "Tailwind",
+      "Radix-UI"
     ],
-    "image": "../assets/images/project_screenshot.png",
-    "link": "https://abhijit2607.github.io/Advanced-React-To-do-App/#/signin"
+    "image": "/assets/images/Portfolio.png",
+    "imageAlt": "Screenshot of the hero section of a portfolio, which has an headshot and some text.",
+    "link": "ENTER THE LINK AFTER HOSTING"
   },
   {
     "id": 2,
     "title": "AI Chatbot",
-    "description": "An AI chatbot powered by OpenAI API.",
+    "description": "An AI chatbot powered by DeepSeek R1.",
+    "category": "NextJS",
+    "techStack": [
+      "NextJS",
+      "DeepSeek R1", 
+      "Amphion",
+      "OpenSora"
+    ],
+    "image": "/assets/images/Under-Construction.svg",
+    "imageAlt": "Screenshot of the chatbot interface of a AI-powered assistant for learning",
+    "link": "ENTER THE LINK AFTER HOSTING"
+  },
+  {
+    "id": 3,
+    "title": "To-Do App",
+    "description": "A To-Do app with weather forecasting functionality.",
+    "category": "React",
     "techStack": [
       "React",
-      "Node.js",
-      "OpenAI API"
+      "Tailwind",
+      "Weather API",
+      "Material UI", 
+      "Axios", 
+      "Redux-Thunk"
     ],
-    "image": "../assets/images/project_screenshot.png",
+    "image": "/assets/images/To-do.png",
+    "imageAlt": "Screenshot of the To-Do App with the weather API interface.",
     "link": "https://abhijit2607.github.io/Advanced-React-To-do-App/#/signin"
   }
 ]

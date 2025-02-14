@@ -6,9 +6,10 @@
     --color-navbar: #1A0B2E;
     --color-base-text: #ffffff;
     --color-themed-text: #7127BA;
-    --color-nav-button: #2b134c;
+    --color-button: #2b134c;
     --color-skill-card: linear-gradient(45deg, #130428 7%, #251043 34%, #38126D 57%, #261045 85%, #190634 100%);
     --color-card-border: #4F228D;
+    --color-swiper: #7127BA;
 }
 
 @layer base {
@@ -23,7 +24,7 @@
     .section-heading {
         @apply text-3xl font-bold my-2;
     }
-    
+
     .card {
         @apply relative flex flex-col justify-center lg:items-center h-50 min-h-[200px] rounded-lg border-t-2 border-card-border;
     }
@@ -43,6 +44,27 @@
 
     .card-list {
         @apply list-disc;
+    }
+
+    /* Navigation arrows */
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        color: var(--color-swiper);
+        font-size: 1.5rem !important;
+        font-weight: 900 !important;
+    }
+
+    /* Pagination bullets */
+    .swiper-pagination-bullet {
+        background: #ffffff !important;
+        opacity: 0.5 !important;
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: var(--color-swiper) !important;
+        opacity: 1 !important;
     }
 
 }
