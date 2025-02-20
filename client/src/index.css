@@ -67,4 +67,9 @@
         opacity: 1 !important;
     }
 
+
+    .contact-card input,
+    .contact-card textarea {
+        @apply bg-white rounded-md text-black p-1 w-full
+    }
 }

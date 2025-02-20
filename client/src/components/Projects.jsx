@@ -39,7 +39,7 @@ const Projects = () => {
   }, [selectedCategory, projects]);
 
   return (
-    <Section>
+    <Section id='projects'>
       <Section className='section-heading'>Projects</Section>
       <Section>
         <Section className='mb-3'>
@@ -50,7 +50,7 @@ const Projects = () => {
                 <DropdownMenu.TriggerIcon />
               </Button>
             </DropdownMenu.Trigger>
-            <DropdownMenu.Content className="min-w-[120px] bg-navbar border border-[#4F228D] rounded-md shadow-lg z-10 outline-none text-base-text hover:bg-[#3a1d6c]">
+            <DropdownMenu.Content className="min-w-[120px] bg-navbar border border-[#4F228D] rounded-md shadow-lg z-40 outline-none text-base-text hover:bg-[#3a1d6c]">
               {categories.map((category, index) => (
                 <DropdownMenu.Item
                   key={index}
@@ -64,7 +64,7 @@ const Projects = () => {
           </DropdownMenu.Root>
 
         </Section>
-        <Section className="p-1.5 border-1 border-[#80808036] rounded-md">
+        <Section className="swiper-wrapper p-1.5 border-1 border-[#80808036] rounded-md ">
           <Swiper
             className='swiper'
             modules={[Navigation, Pagination, Autoplay]}

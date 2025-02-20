@@ -32,7 +32,7 @@ const NavBar = () => {
   const [isMenuClosed, setIsMenuClosed] = useState(true);
 
   return (
-    <nav className='sticky bg-navbar z-50'>
+    <nav className='sticky bg-navbar'>
       {/* Mobile Controls */}
       <div className='md:hidden'>
         <Section className='h-15 p-5 flex justify-between items-center'>
@@ -47,7 +47,7 @@ const NavBar = () => {
         </Section>
 
         {/* Mobile Menu */}
-        <Section className={`${isMenuClosed ? 'hidden' : 'fixed inset-0 top-15 z-50 h-[calc(100vh-3.75rem)]'}`}>
+        <Section className={`${isMenuClosed ? 'hidden' : 'fixed inset-0 top-15 h-[calc(100vh-3.75rem)]'}`}>
           <div className="absolute inset-0 bg-navbar">
             <NavLinks mobile setIsMenuClosed={setIsMenuClosed}  />
           </div>

@@ -20,7 +20,7 @@
     "category": "NextJS",
     "techStack": [
       "NextJS",
-      "DeepSeek R1", 
+      "DeepSeek R1",
       "Amphion",
       "OpenSora"
     ],
@@ -37,12 +37,38 @@
       "React",
       "Tailwind",
       "Weather API",
-      "Material UI", 
-      "Axios", 
+      "Material UI",
+      "Axios",
       "Redux-Thunk"
     ],
     "image": "/assets/images/To-do.png",
     "imageAlt": "Screenshot of the To-Do App with the weather API interface.",
     "link": "https://abhijit2607.github.io/Advanced-React-To-do-App/#/signin"
+  },
+  {
+    "id": 4,
+    "title": "Google Clone",
+    "description": "A clone of Google search and Image Search.",
+    "category": "HTML-CSS",
+    "techStack": [
+      "HTML",
+      "CSS"
+    ],
+    "image": "/assets/images/Google-Clone.png",
+    "imageAlt": "Screenshot of the Google Search and Image Search interface.",
+    "link": "ENTER THE LINK AFTER HOSTING"
+  },
+  {
+    "id": 5,
+    "title": "Wikipedia Clone",
+    "description": "A clone of Wikipedia.",
+    "category": "Django",
+    "techStack": [
+      "Python",
+      "Django"
+    ],
+    "image": "/assets/images/Wikipedia-Clone.png",
+    "imageAlt": "Screenshot of the Wikipedia interface.",
+    "link": "ENTER THE LINK AFTER HOSTING"
   }
 ]

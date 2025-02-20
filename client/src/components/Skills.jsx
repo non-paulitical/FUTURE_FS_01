@@ -3,7 +3,7 @@ import { Section } from '@radix-ui/themes';
 
 const Skills = () => {
   return (
-    <Section className='min-h-screen md:min-h-[60vh] flex flex-col bg-[url("/assets/gradient/gradient.svg")] bg-repeat-space bg-contain md:bg-rounded'>
+    <Section id='skills' className='min-h-screen md:min-h-[60vh] flex flex-col bg-[url("/assets/gradient/gradient.svg")] bg-repeat-space bg-contain md:bg-rounded z-0'>
       <Section>
         <h1 className='section-heading'>Skills</h1>
       </Section>
