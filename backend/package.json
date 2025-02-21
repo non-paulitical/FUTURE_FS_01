@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for the portfolio website.",
+  "homepage": "https://github.com/non-paulitical/FUTURE_FS_01#readme",
+  "bugs": {
+    "url": "https://github.com/non-paulitical/FUTURE_FS_01/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/non-paulitical/FUTURE_FS_01.git"
+  },
+  "license": "ISC",
+  "author": "Abhijit Paul",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4"
+  }
+}
