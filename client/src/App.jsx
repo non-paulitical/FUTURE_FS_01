@@ -1,4 +1,5 @@
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Container } from '@radix-ui/themes';
 import { NavBar, About, Projects, Skills, Contact } from './components';
@@ -22,6 +23,7 @@ function App() {
           </footer>
         </div>
       </Container>
+      <SpeedInsights />
     </Router >
   )
 }
