@@ -7,7 +7,7 @@ import { Button, Section, VisuallyHidden } from '@radix-ui/themes';
 const handleNavigation = (e, mobile, section, onCloseMenu) => {
   e.preventDefault();
   document.getElementById(section).scrollIntoView({ behavior: (mobile ? 'instant' : 'smooth'), block: 'start' });
-  onCloseMenu();
+  mobile && onCloseMenu();
 }
 
 // Shared Logo Component
