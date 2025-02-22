@@ -17,7 +17,7 @@ function App() {
             <Projects />
             <Skills />
           </main>
-          <footer>
+          <footer className='mt-25'>
             <Contact />
           </footer>
         </div>

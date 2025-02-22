@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Section } from '@radix-ui/themes';
+import { Button, Section, VisuallyHidden } from '@radix-ui/themes';
 
 
 // Navigation
 const handleNavigation = (e, mobile, section, onCloseMenu) => {
   e.preventDefault();
-  document.getElementById(section).scrollIntoView({ behavior: (mobile ? 'instant' : 'smooth' ), block: 'start' });
+  document.getElementById(section).scrollIntoView({ behavior: (mobile ? 'instant' : 'smooth'), block: 'start' });
   onCloseMenu();
 }
 
@@ -30,6 +30,17 @@ const NavLinks = ({ mobile = false, onCloseMenu }) => (
 
 const NavBar = () => {
   const [isMenuClosed, setIsMenuClosed] = useState(true);
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuClosed ? '' : 'hidden';
+
+    function cleanup() {
+      document.body.style.overflow = '';
+    }
+    
+    return cleanup;
+    
+  }, [isMenuClosed]);
 
   return (
     <nav className='sticky bg-navbar'>
