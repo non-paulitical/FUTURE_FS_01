@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
+    <Router >
       <Container className="h-full bg-background text-base-text">
         <header className="sticky top-0">
           <NavBar />
@@ -22,7 +22,7 @@ function App() {
           </footer>
         </div>
       </Container>
-    </Router>
+    </Router >
   )
 }
 

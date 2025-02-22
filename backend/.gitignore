@@ -2,5 +2,5 @@
 node_modules/
 
 # Environment Variables
-sendgrid.env
+.env
 
