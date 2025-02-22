@@ -4,10 +4,10 @@ import { Button, Section } from '@radix-ui/themes';
 
 
 // Navigation
-const handleNavigation = (e, section, setIsMenuClosed) => {
+const handleNavigation = (e, mobile, section, onCloseMenu) => {
   e.preventDefault();
-  document.getElementById(section).scrollIntoView({ behavior: 'smooth', block: 'start' });
-  if(setIsMenuClosed) setIsMenuClosed(true);  
+  document.getElementById(section).scrollIntoView({ behavior: (mobile ? 'instant' : 'smooth' ), block: 'start' });
+  onCloseMenu();
 }
 
 // Shared Logo Component
@@ -16,15 +16,15 @@ const NavLogo = () => (
 );
 
 // Shared Navigation Links Component
-const NavLinks = ({ mobile = false }, setIsMenuClosed) => (
+const NavLinks = ({ mobile = false, onCloseMenu }) => (
   <ul className={`${mobile ?
     'h-full space-y-10 text-3xl font-bold flex flex-col justify-center items-center' :
     'flex gap-10 *:hover:underline underline-offset-4'}`}
   >
-    <li><Link to={'/about'} onClick={(e) => handleNavigation(e, 'about', setIsMenuClosed)}>ABOUT</Link></li>
-    <li><Link to={'/projects'} onClick={(e) => handleNavigation(e, 'projects', setIsMenuClosed)}>PROJECTS</Link></li>
-    <li><Link to={'/skills'} onClick={(e) => handleNavigation(e, 'skills', setIsMenuClosed)}>SKILLS</Link></li>
-    <li><Link to={'/contact'} onClick={(e) => handleNavigation(e, 'contact', setIsMenuClosed)}>CONTACT</Link></li>
+    <li><Link to={'/about'} onClick={(e) => handleNavigation(e, mobile, 'about', onCloseMenu)}>ABOUT</Link></li>
+    <li><Link to={'/projects'} onClick={(e) => handleNavigation(e, mobile, 'projects', onCloseMenu)}>PROJECTS</Link></li>
+    <li><Link to={'/skills'} onClick={(e) => handleNavigation(e, mobile, 'skills', onCloseMenu)}>SKILLS</Link></li>
+    <li><Link to={'/contact'} onClick={(e) => handleNavigation(e, mobile, 'contact', onCloseMenu)}>CONTACT</Link></li>
   </ul>
 );
 
@@ -49,7 +49,7 @@ const NavBar = () => {
         {/* Mobile Menu */}
         <Section className={`${isMenuClosed ? 'hidden' : 'fixed inset-0 top-15 h-[calc(100vh-3.75rem)]'}`}>
           <div className="absolute inset-0 bg-navbar">
-            <NavLinks mobile setIsMenuClosed={setIsMenuClosed}  />
+            <NavLinks mobile onCloseMenu={() => setIsMenuClosed(true)} />
           </div>
         </Section>
       </div>

@@ -7,7 +7,8 @@
     "techStack": [
       "Vite + React",
       "Tailwind",
-      "Radix-UI"
+      "Radix-UI",
+      "Swiper JS"
     ],
     "image": "/assets/images/Portfolio.png",
     "imageAlt": "Screenshot of the hero section of a portfolio, which has an headshot and some text.",
@@ -49,7 +50,7 @@
     "id": 4,
     "title": "Google Clone",
     "description": "A clone of Google search and Image Search.",
-    "category": "HTML-CSS",
+    "category": "Vanilla",
     "techStack": [
       "HTML",
       "CSS"

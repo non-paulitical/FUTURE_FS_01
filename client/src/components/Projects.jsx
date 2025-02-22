@@ -50,11 +50,11 @@ const Projects = () => {
                 <DropdownMenu.TriggerIcon />
               </Button>
             </DropdownMenu.Trigger>
-            <DropdownMenu.Content className="min-w-[120px] bg-navbar border border-[#4F228D] rounded-md shadow-lg z-40 outline-none text-base-text hover:bg-[#3a1d6c]">
+            <DropdownMenu.Content className="min-w-[120px] bg-navbar border border-[#4F228D] rounded-md shadow-lg z-40 outline-none text-base-text">
               {categories.map((category, index) => (
                 <DropdownMenu.Item
                   key={index}
-                  className="text-base-text px-4 py-2 hover:bg-[#2b134c] cursor-pointer focus:outline-none"
+                  className="text-base-text px-4 py-2 hover:bg-[#3a1d6c] cursor-pointer focus:outline-none"
                   onSelect={() => setSelectedCategory(category)}
                 >
                   {category}
